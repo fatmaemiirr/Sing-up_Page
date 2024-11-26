@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sol Form -->
+    <div class="signup-form active" id="initial-card">
+        <h2>Kayıt Ol</h2>
+        <p>Bize katıl! Yolculuğunu başlat.</p>
+        <button class="google-signup" onclick="showForm()">Google ile Kayıt Ol</button>
+        <button class="email-signup" onclick="showForm()">E-posta ile Kayıt Ol</button>
+        <p>Zaten bir hesabınız var mı? <a href="#">Giriş Yap</a></p>
+    </div>
+
+    <!-- Sağ Form -->
+    <div class="signup-form" id="form-card">
+        <h2>Kayıt Ol</h2>
+        <p>Bize katıl! Yolculuğunu başlat.</p>
+        <form id="signupForm">
+            <input type="text" id="name" name="name" placeholder="Ad" required>
+            <input type="email" id="email" name="email" placeholder="E-posta" required>
+            <input type="password" id="password" name="password" placeholder="Şifre" required>
+            <button type="submit">Kayıt Ol</button>
+        </form>
+        <p>Zaten bir hesabınız var mı? <a href="#">Giriş Yap</a></p>
+        <p>veya</p>
+        <button class="google-signup" onclick="alert('Google ile kayıt olmayı seçtiniz (Sağ form)!')">Google ile Kayıt Ol</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
